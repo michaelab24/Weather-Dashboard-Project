@@ -1,0 +1,20 @@
+.col-sm-12 {
+    text-align: center;
+    height: 75px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(to left,rgb(11, 11, 85) 0%,rgb(40, 40, 172) 50%,rgb(160, 160, 206) 100%);
+}
+
+.col-sm {
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.row {
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-top: 15px;
+}
