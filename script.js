@@ -1,4 +1,9 @@
-function citySearch(eventS) {
-    console.log(searchbutton)
+$(".searchButton").on("click", citySearch);
+
+
+
+function citySearch() {
+    var searchTerm = $("#cityInput").val()
+    console.log(searchTerm)
     
 }
