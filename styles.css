@@ -18,3 +18,17 @@
     margin-right: -200px;
     margin-top: 15px;
 }
+
+input {
+    width: 300px;
+    height: 40px;
+}
+
+button {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(104, 175, 255);
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+}
