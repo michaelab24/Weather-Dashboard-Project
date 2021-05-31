@@ -14,8 +14,9 @@
 }
 
 .row {
-    margin-left: -200px;
-    margin-right: -200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     margin-top: 15px;
 }
 
@@ -35,11 +36,11 @@ button {
 }
 
 .dailywrap {
-    width: 100%;
+    width: 95%;
     border: 1px solid black;
     margin-left: 5px;
     margin-right: 5px;
-    height: 200px;
+    height: 225px;
 }
 
 .forcastwrapper {
@@ -59,6 +60,6 @@ button {
     margin-right: 5px;
     color: white;
     padding: 5px;
-    height: 200px;
+    height: 50px;
     width: 175px;
 }
