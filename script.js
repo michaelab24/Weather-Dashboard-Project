@@ -1,4 +1,5 @@
 const weatherapiKey = "&api_key=07543a927539e6db80c95ecc58f16eb9"
+dt = luxon.DateTime.now();
 //var cityheadEl =
 //var templabelEl =
 //var windlabelEl =
@@ -31,7 +32,7 @@ function apiFetch(city) {
             console.log(response);
             var weatherContainerEl = document.querySelector("#daily-weather");
 
-            cityName.textContent = city
+            cityName.textContent = city + " " + dt.toLocaleString();
 
             var tempDiv = document.querySelector("#cityTemp")
             tempDiv.textContent = (response.main.temp + "°F")
@@ -62,7 +63,9 @@ function fivedayFetch(city) {
             console.log(response);
             var weatherContainerEl = document.querySelector("#fivedayCast");
 
-
+            var dateDiv = document.querySelector("#date1")
+            dateDiv.textContent = dt.plus({days:1}).toLocaleString()
+            
             var tempDiv = document.querySelector("#temp1")
             tempDiv.textContent = (response.list[0].main.temp + "°F")
 
@@ -73,6 +76,9 @@ function fivedayFetch(city) {
             var humidityDiv = document.querySelector("#hum1")
             humidityDiv.textContent = (response.list[0].main.humidity + "%")
 
+            var dateDiv = document.querySelector("#date2")
+            dateDiv.textContent = dt.plus({days:2}).toLocaleString()
+            
             var tempDiv = document.querySelector("#temp2")
             tempDiv.textContent = (response.list[8].main.temp + "°F")
 
@@ -83,6 +89,9 @@ function fivedayFetch(city) {
             var humidityDiv = document.querySelector("#hum2")
             humidityDiv.textContent = (response.list[8].main.humidity + "%")
 
+            var dateDiv = document.querySelector("#date3")
+            dateDiv.textContent = dt.plus({days:3}).toLocaleString()
+
             var tempDiv = document.querySelector("#temp3")
             tempDiv.textContent = (response.list[16].main.temp + "°F")
 
@@ -92,6 +101,9 @@ function fivedayFetch(city) {
 
             var humidityDiv = document.querySelector("#hum3")
             humidityDiv.textContent = (response.list[16].main.humidity + "%")
+
+            var dateDiv = document.querySelector("#date4")
+            dateDiv.textContent = dt.plus({days:4}).toLocaleString()
             
             var tempDiv = document.querySelector("#temp4")
             tempDiv.textContent = (response.list[24].main.temp + "°F")
@@ -102,6 +114,9 @@ function fivedayFetch(city) {
 
             var humidityDiv = document.querySelector("#hum4")
             humidityDiv.textContent = (response.list[24].main.humidity + "%")
+
+            var dateDiv = document.querySelector("#date5")
+            dateDiv.textContent = dt.plus({days:5}).toLocaleString()
 
             var tempDiv = document.querySelector("#temp5")
             tempDiv.textContent = (response.list[32].main.temp + "°F")
