@@ -64,55 +64,56 @@ function fivedayFetch(city) {
 
 
             var tempDiv = document.querySelector("#temp1")
-            tempDiv.textContent = (response.data.temp + "°F")
+            tempDiv.textContent = (response.list[0].main.temp + "°F")
 
             var windDiv = document.querySelector("#wind1")
-            windDiv.textContent = (response.wind.speed + "mph")
+            windDiv.textContent = (response.list[0].wind.speed + "mph")
 
 
             var humidityDiv = document.querySelector("#hum1")
-            humidityDiv.textContent = (response.main.humidity + "%")
+            humidityDiv.textContent = (response.list[0].main.humidity + "%")
 
-            //var tempDiv = document.querySelector("#temp2")
-            //tempDiv.textContent = (response.data.temp + "°F")
+            var tempDiv = document.querySelector("#temp2")
+            tempDiv.textContent = (response.list[8].main.temp + "°F")
 
-            // var windDiv = document.querySelector("#wind2")
-            //windDiv.textContent = (response.wind.speed + "mph")
-
-
-            //  var humidityDiv = document.querySelector("#hum2")
-            // humidityDiv.textContent = (response.main.humidity + "%")
-
-            //var tempDiv = document.querySelector("#temp3")
-            //tempDiv.textContent = (response.data.temp + "°F")
-
-            // var windDiv = document.querySelector("#wind3")
-            //windDiv.textContent = (response.wind.speed + "mph")
+            var windDiv = document.querySelector("#wind2")
+            windDiv.textContent = (response.list[8].wind.speed + "mph")
 
 
-            //  var humidityDiv = document.querySelector("#hum3")
-            // humidityDiv.textContent = (response.main.humidity + "%")
+            var humidityDiv = document.querySelector("#hum2")
+            humidityDiv.textContent = (response.list[8].main.humidity + "%")
 
-            //var tempDiv = document.querySelector("#temp4")
-            //tempDiv.textContent = (response.data.temp + "°F")
+            var tempDiv = document.querySelector("#temp3")
+            tempDiv.textContent = (response.list[16].main.temp + "°F")
 
-            // var windDiv = document.querySelector("#wind4")
-            //windDiv.textContent = (response.wind.speed + "mph")
-
-
-            //  var humidityDiv = document.querySelector("#hum4")
-            // humidityDiv.textContent = (response.main.humidity + "%")
-
-            //var tempDiv = document.querySelector("#temp5")
-            //tempDiv.textContent = (response.data.temp + "°F")
-
-            // var windDiv = document.querySelector("#wind5")
-            //windDiv.textContent = (response.wind.speed + "mph")
+            var windDiv = document.querySelector("#wind3")
+            windDiv.textContent = (response.list[16].wind.speed + "mph")
 
 
-            //  var humidityDiv = document.querySelector("#hum5")
-            // humidityDiv.textContent = (response.main.humidity + "%")
+            var humidityDiv = document.querySelector("#hum3")
+            humidityDiv.textContent = (response.list[16].main.humidity + "%")
+            
+            var tempDiv = document.querySelector("#temp4")
+            tempDiv.textContent = (response.list[24].main.temp + "°F")
 
+            var windDiv = document.querySelector("#wind4")
+            windDiv.textContent = (response.list[24].wind.speed + "mph")
+
+
+            var humidityDiv = document.querySelector("#hum4")
+            humidityDiv.textContent = (response.list[24].main.humidity + "%")
+
+            var tempDiv = document.querySelector("#temp5")
+            tempDiv.textContent = (response.list[32].main.temp + "°F")
+
+            var windDiv = document.querySelector("#wind5")
+            windDiv.textContent = (response.list[32].wind.speed + "mph")
+
+
+            var humidityDiv = document.querySelector("#hum5")
+            humidityDiv.textContent = (response.list[32].main.humidity + "%")
+
+           
         });
 }
 
