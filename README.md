@@ -4,4 +4,6 @@ This website functions as a weather dashboard that gives you the current weather
 
 github: https://github.com/michaelab24/Weather-Dashboard-Project
 
-project: 
+project: https://michaelab24.github.io/Weather-Dashboard-Project/
+
+
